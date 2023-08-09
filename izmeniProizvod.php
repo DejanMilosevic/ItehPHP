@@ -46,7 +46,7 @@ if (isset($_POST['updateid'])) {
             <div class="card-heading" style="background: url('images/pozadina.jpeg') top left/cover no-repeat; display: table-cell; width: 52%;"></div>
             <div class="card-body">
                 <h2 class="title">Azuriraj proizvod</h2>
-                <form action="updateProizvod.php" method="POST" id="izmeniProizvod">
+                <form action="izmeniProizvod.php" method="POST" id="izmeniProizvod">
                     <div class="input-group">
                         <input class="input--style-3" type="text" value="<?php echo $row['naziv'] ?>" placeholder="Naziv" name="nazivE" required>
                     </div>

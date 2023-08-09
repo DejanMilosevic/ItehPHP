@@ -4,9 +4,9 @@
     include '../model/proizvod.php';
 
         if(isset($_POST['deleteid'])){
-               $result=  Proizvod::deleteProizvod($_POST['deleteid'],$conn);
+               $status=  Proizvod::deleteProizvod($_POST['deleteid'],$conn);
 
-               if($result){
+               if($status){
                    echo 'Success';
                }else{
                    echo 'Failed';

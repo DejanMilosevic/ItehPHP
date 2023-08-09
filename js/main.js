@@ -19,8 +19,9 @@ $("#dodajProizvod").submit(function () {
     console.log(jqXHR);
     console.log(response);
 
-    if (response === "Success") {
+    if (response === "\nSuccess") {
       alert("Uspesno dodato");
+      
     } else {
       console.log("Neuspesno" + response);
     }
@@ -37,13 +38,13 @@ function obrisiProizvod(deleteid) {
     type: "post",
     data: { deleteid: deleteid },
   });
-
+  console.log(request);
   request.done(function (response, textStatus, jqXHR) {
     console.log(textStatus);
     console.log(jqXHR);
     console.log(response);
 
-    if (response === "Success") {
+    if (response === "\nSuccess") {
       alert("Uspesno obrisano");
 
       $("#proizvodi").html("");
