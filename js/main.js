@@ -1,6 +1,4 @@
-
 $("#dodajProizvod").submit(function () {
-
   var form = $("#dodajProizvod")[0];
   var formData = new FormData(form);
   event.preventDefault();
@@ -21,7 +19,6 @@ $("#dodajProizvod").submit(function () {
 
     if (response === "\nSuccess") {
       alert("Uspesno dodato");
-      
     } else {
       console.log("Neuspesno" + response);
     }
@@ -90,7 +87,6 @@ $("#izmeniProizvod").submit(function () {
 
     if (response === "Success") {
       alert("Uspesno izmenjeno");
-
     } else {
       console.log("Neuspesno" + response);
     }
@@ -111,7 +107,7 @@ function sortirajPoCeni() {
 }
 
 function pretraga() {
-  var input, radios, radio_filter, text_filter, td0, i, divList;
+  var input, text_filter, td0, i, divList;
 
   input = document.getElementById("form1");
   text_filter = input.value.toUpperCase();
